@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
       - uses: actions/checkout@v2
 
 #      - name: Docker meta
@@ -76,3 +77,4 @@ jobs:
           tags: |
             steled/bitnami-shell:debian-arm64
             steled/bitnami-shell:latest-arm64
+            steled/bitnami-shell:${{ github.ref }}
