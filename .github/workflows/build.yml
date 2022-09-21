@@ -77,4 +77,4 @@ jobs:
           tags: |
             steled/bitnami-shell:debian-arm64
             steled/bitnami-shell:latest-arm64
-            steled/bitnami-shell:${{ github.ref }}
+            steled/bitnami-shell:${{ github.ref_name }}
